@@ -1,0 +1,15 @@
+
+memberMG 会员管理
+orderFormMG 订单管理
+DishesMG 菜单管理
+financeMG 财务管理
+procurementMG 采购管理
+repertory 库存管理
+personal details个人信息
+file 文件管理
+assetMG 资产管理
+tables 桌台管理
+queue upMG排队管理
+TangKouMG堂口管理
+shopInformation 门店信息
+systemMG系统管理
