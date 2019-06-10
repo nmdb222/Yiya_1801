@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<configuration>
+
+    <!--配置日记开关 可以打印SQL语句-->
+    <settings>
+        <setting name="logImpl" value="LOG4J2"/>
+    </settings>
+
+    <!--别名-->
+    <typeAliases>
+    <package name="com.hy.bean"></package>
+    </typeAliases>
+
+    <!--&lt;!&ndash;配置插件分页拦截器&ndash;&gt;-->
+    <!--<plugins>-->
+        <!--<plugin interceptor="com.github.pagehelper.PageInterceptor">-->
+            <!--<property name="supportMethodsArguments" value="true"></property>-->
+        <!--</plugin>-->
+    <!--</plugins>-->
+
+    <!--引入mybatis映射文件三种方式-->
+    <!--<mappers>-->
+        <!--&lt;!&ndash;rerource:引入映射文件相对于classpath的地址&ndash;&gt;-->
+        <!--&lt;!&ndash;<mapper class="" />&ndash;&gt;-->
+        <!--&lt;!&ndash;//批量记载映射文件&ndash;&gt;-->
+        <!--&lt;!&ndash;<package name="">&ndash;&gt;-->
+        <!--<package name="com.hy.dao"></package>-->
+    <!--</mappers>-->
+</configuration>
