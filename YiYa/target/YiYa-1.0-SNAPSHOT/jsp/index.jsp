@@ -28,20 +28,15 @@
 <body>
 <!-- 顶部开始 -->
 <div class="container">
-    <div class="logo"><a href="index.html">易牙餐饮后台系统 v1.0</a></div>
-    <div class="left_open">
-        <i title="展开左侧栏" class="iconfont">&#xe699;</i>
-    </div>
+    <div class="logo"><a href="index.html">快乐肥仔餐饮后台系统 v1.0</a></div>
+
 
     <ul class="layui-nav left fast-add" lay-filter="">
 
         <li class="layui-nav-item">
-            <a href="javascript:;">基础信息</a>
-            <dl class="layui-nav-child"> <!-- 二级菜单 -->
-                <dd><a onClick="x_admin_show('资讯','http://www.baidu.com')"><i class="iconfont">&#xe6a2;</i>资讯</a></dd>
-                <dd><a onClick="x_admin_show('图片','http://www.baidu.com')"><i class="iconfont">&#xe6a8;</i>图片</a></dd>
-                <dd><a onClick="x_admin_show('用户','http://www.baidu.com')"><i class="iconfont">&#xe6b8;</i>用户</a></dd>
-            </dl>
+            <div class="left_open">
+                <i title="展开左侧栏" class="iconfont">信息</i>
+            </div>
         </li>
 
         <li class="layui-nav-item">
