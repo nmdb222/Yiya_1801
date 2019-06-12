@@ -1,7 +1,7 @@
 package com.hy.yiya.financeMG.service;
 
-import com.hy.yiya.utl.financeMG.bean.Danju;
-import com.hy.yiya.utl.financeMG.mapper.DanjuMapper;
+import com.hy.yiya.financeMG.bean.Danju;
+import com.hy.yiya.financeMG.mapper.DanjuMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,4 +15,9 @@ public class DanjuService {
 
     public List<Danju> queryAll(){ return danjuMapper.queryAll();}
 
+    public void delect(int id){  danjuMapper.delect(id);}
+
+    public boolean queryByID(int id){
+        return  danjuMapper.queryByID(id);
+    }
 }

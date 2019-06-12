@@ -26,9 +26,9 @@
   <!--*********************************************【Druid】*********************************************************-->
   <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
     <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-    <property name="url" value="jdbc:mysql://localhost:3306/demo1?serverTimezone=GMT"/>
+    <property name="url" value="jdbc:mysql://localhost:3306/huayu?serverTimezone=GMT"/>
     <property name="username" value="root"/>
-    <property name="password" value="1234"/>
+    <property name="password" value="521314"/>
   </bean>
   <!--***************************【spring和MyBatis完美整合，不需要mybatis的配置映射文件】******************************-->
   <bean id="sqlSessionFactory" class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
@@ -43,4 +43,8 @@
   <!--*****************************-**【加载mybist plus queryWrapper容器】********************************************-->
   <bean id="queryWrapper" class="com.baomidou.mybatisplus.core.conditions.query.QueryWrapper"></bean>
 
+
+  <!--扫描注解-->
+  <context:component-scan base-package="com.hy"></context:component-scan>
+ <!-- 提交前删除-->
 </beans>
