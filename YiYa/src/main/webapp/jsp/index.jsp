@@ -273,7 +273,8 @@
         </ul>
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
-                <iframe src='html/welcome.html' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
+                <%--<iframe src='img/20140311104555247_ipad3.jpg' frameborder="0" scrolling="yes" class="x-iframe"></iframe>--%>
+                <img src="/img/20140311104555247_ipad3.jpg" width="100%" height="100%"/>
             </div>
         </div>
     </div>
