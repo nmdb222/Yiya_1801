@@ -114,17 +114,44 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1813500762">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="YiYa" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-873">
-              <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+            <state relative-caret-position="23">
+              <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hy/yiya/financeMG/bean/Danju.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -160,6 +187,9 @@
         <option value="$PROJECT_DIR$/src/main/java/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MpGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hy/yiya/entity/financeMG/bean/Danju.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hy/yiya/financeMG/bean/Danju.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hy/yiya/procurementMG/bean/Danju.java" />
       </list>
     </option>
   </component>
@@ -214,8 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,34 +251,62 @@
               <item name="YiYa" type="b2602c69:ProjectViewProjectNode" />
               <item name="YiYa" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="YiYa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YiYa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YiYa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YiYa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YiYa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YiYa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YiYa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YiYa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yiya" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560306111306" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560308303709" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/hy/yiya/entity/financeMG" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/src/main/java/com/hy/yiya/entity/financeMG" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Yiya_1801\YiYa\src\main\java" />
-      <recent name="D:\Yiya_1801\YiYa\src\main\webapp\img" />
-      <recent name="D:\IDEAXiangMu\YiYa\src\main\webapp\layui\lib\layui\font" />
-      <recent name="D:\IDEAXiangMu\YiYa\src\main\webapp" />
-      <recent name="D:\IDEAXiangMu\YiYa\src\main\webapp\layui\images" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Yiya_1801" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hy.yiya.utl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Yiya_1801" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\yiya\YiYa\src\main\java\com\hy\yiya" />
+      <recent name="D:\yiya\YiYa\src\main\java\com\hy\yiya\entity" />
+      <recent name="D:\Yiya_1801\YiYa\src\main\java" />
+      <recent name="D:\Yiya_1801\YiYa\src\main\webapp\img" />
+      <recent name="D:\IDEAXiangMu\YiYa\src\main\webapp\layui\lib\layui\font" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -392,17 +448,17 @@
       <workItem from="1559639967146" duration="10397000" />
       <workItem from="1560134335680" duration="5427000" />
       <workItem from="1560299843421" duration="6315000" />
+      <workItem from="1560307719043" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22708000" />
+    <option name="totallyTimeSpent" value="23308000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49616858" visible="true" weight="0.22386059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49616858" visible="true" weight="0.22995462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -411,7 +467,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" sideWeight="0.5019157" side_tool="true" weight="0.16957104" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.51343703" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.51309705" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.33519554" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27094972" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -533,16 +589,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/img/20140311104555247_ipad3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baomidou/ant/bean/entity/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baomidou/ant/bean/entity/Action.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.0-RELEASE/mybatis-plus-generator-3.0-RELEASE.jar!/com/baomidou/mybatisplus/generator/config/StrategyConfig.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -550,35 +597,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baomidou/com/hy/yiya/entity/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hy/yiya/bean/entity/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1996#2119#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baomidou/com/hy/yiya/entity/Action.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hy/yiya/bean/entity/Action.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/CodeGenerator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/Spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -600,13 +621,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hy/yiya/utl/LogInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="84" column="94" lean-forward="true" selection-start-line="84" selection-start-column="94" selection-end-line="84" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hy/yiya/utl/LogInterceptor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis_cfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110">
@@ -622,17 +637,7 @@
         <state relative-caret-position="-339" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MpGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-          <folding>
-            <element signature="e#1949#2087#0" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MpGenerator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hy/yiya/entity/Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -642,8 +647,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-873">
-          <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+        <state relative-caret-position="23">
+          <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hy/yiya/procurementMG/bean/Danju.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hy/yiya/financeMG/bean/Danju.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
