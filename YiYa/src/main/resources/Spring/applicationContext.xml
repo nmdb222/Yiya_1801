@@ -26,7 +26,7 @@
   <!--*********************************************【Druid】*********************************************************-->
   <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
     <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-    <property name="url" value="jdbc:mysql://localhost:3306/huayu?serverTimezone=GMT"/>
+    <property name="url" value="jdbc:mysql://localhost:3306/huayu?serverTimezone=GMT&amp;characterEncoding=utf-8"/>
     <property name="username" value="root"/>
     <property name="password" value="521314"/>
   </bean>
@@ -44,7 +44,7 @@
   <bean id="queryWrapper" class="com.baomidou.mybatisplus.core.conditions.query.QueryWrapper"></bean>
 
 
-  <!--扫描注解-->
+  <!--扫描注解 提交前删除-->
   <context:component-scan base-package="com.hy"></context:component-scan>
- <!-- 提交前删除-->
+
 </beans>

@@ -55,6 +55,9 @@ public class Danju {
         this.type = type;
     }
 
+    public DanjuType getTy() {
+        return ty;
+    }
 
     public void setTy(DanjuType ty) {
         this.ty = ty;
@@ -66,9 +69,5 @@ public class Danju {
 
     public void setTest(String test) {
         this.test = test;
-    }
-
-    public DanjuType getTy() {
-        return ty;
     }
 }

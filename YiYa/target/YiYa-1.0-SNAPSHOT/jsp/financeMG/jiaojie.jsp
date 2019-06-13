@@ -9,7 +9,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>后台登录-L-admin1.0</title>
+    <title>交接</title>
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -28,6 +28,8 @@
 <body>
 <script type="text/javascript"  src="jquery-3.3.1.js" ></script>
 
+
+
 <%--<script type="text/html" id="toolbarDemo">
     <div class="layui-btn-container">
         <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
@@ -43,13 +45,13 @@
 <div class="layui-tab layui-tab-card">
     <ul class="layui-tab-title">
         <li class="layui-this">单据管理</li>
+        <li>商品管理</li>
         <li>订单管理</li>
     </ul>
     <div class="layui-tab-content" style="height: 100px;">
-        <div class="layui-tab-item layui-show">
-            <table  class="layui-hide" id="test" lay-filter="test"></table>
-        </div>
+        <div class="layui-tab-item layui-show"><table  class="layui-hide" id="test" lay-filter="test"></table></div>
         <div class="layui-tab-item">2</div>
+        <div class="layui-tab-item">6</div>
     </div>
 </div>
 

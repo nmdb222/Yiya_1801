@@ -3,6 +3,7 @@ package com.hy.yiya.financeMG.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hy.yiya.financeMG.bean.Danju;
+import com.hy.yiya.financeMG.sql.DanjuSql;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.mapping.FetchType;
 
@@ -21,6 +22,11 @@ public interface DanjuMapper extends BaseMapper<Danju> {
     public void delect(int id);
 
     @Select("select * from danju where id=#{value} ")
-    public boolean queryByID(int id);
+    public Danju queryByID(int id);
 
+    @Update("update danju set bianhao=#{bianhao},money=#{money},type=#{type},test=#{test} where id=#{id}")
+    public void up(Danju danju);
+
+    @SelectProvider(type = DanjuSql.class,method = "select")
+    public List<Danju> cx(Danju student);
 }

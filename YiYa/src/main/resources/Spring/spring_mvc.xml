@@ -76,18 +76,17 @@
   <!-- 使用xml配置aop ,引入AOP的命名空间-->
   <!-- 强制使用cglib代理，如果不设置，将默认使用jdk的代理，但是jdk的代理是基于接口的 -->
   <aop:config proxy-target-class="true" />
-  <aop:config>
-    <!--定义切面-->
-    <aop:aspect id="logAspect" ref="logInterceptor">
-      <!--定义切入点-->
-      <aop:pointcut expression="execution(* com.hy.yiya.*.*.*(..))"  id="logPointCut"/>
-      <!--方法执行之前被调用执行的-->
-      <!--<aop:before method="before" pointcut-ref="logPointCut"/>&lt;!&ndash;一个切入点的引用&ndash;&gt;-->
-      <!--<aop:after method="after" pointcut-ref="logPointCut"/>&lt;!&ndash;一个切入点的引用&ndash;&gt;-->
-      <!--<aop:after-throwing method="afterThrowing" pointcut-ref="logPointCut" />-->
-      <!--<aop:after-returning method="afterReturn" pointcut-ref="logPointCut" />-->
-      <aop:around method="around" pointcut-ref="logPointCut"/>
-    </aop:aspect>
-  </aop:config>
-
+  <!--<aop:config>-->
+    <!--&lt;!&ndash;定义切面&ndash;&gt;-->
+    <!--<aop:aspect id="logAspect" ref="logInterceptor">-->
+      <!--&lt;!&ndash;定义切入点&ndash;&gt;-->
+      <!--<aop:pointcut expression="execution(* com.hy.yiya.*.*.*(..))"  id="logPointCut"/>-->
+      <!--&lt;!&ndash;方法执行之前被调用执行的&ndash;&gt;-->
+      <!--&lt;!&ndash;<aop:before method="before" pointcut-ref="logPointCut"/>&lt;!&ndash;一个切入点的引用&ndash;&gt;&ndash;&gt;-->
+      <!--&lt;!&ndash;<aop:after method="after" pointcut-ref="logPointCut"/>&lt;!&ndash;一个切入点的引用&ndash;&gt;&ndash;&gt;-->
+      <!--&lt;!&ndash;<aop:after-throwing method="afterThrowing" pointcut-ref="logPointCut" />&ndash;&gt;-->
+      <!--&lt;!&ndash;<aop:after-returning method="afterReturn" pointcut-ref="logPointCut" />&ndash;&gt;-->
+      <!--<aop:around method="around" pointcut-ref="logPointCut"/>-->
+    <!--</aop:aspect>-->
+  <!--</aop:config>-->
 </beans>

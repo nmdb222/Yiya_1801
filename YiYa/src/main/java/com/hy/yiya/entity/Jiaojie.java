@@ -74,7 +74,7 @@ public class Jiaojie extends Model<Jiaojie> {
         return "Jiaojie{" +
         "id=" + id +
         ", money=" + money +
-        ", jiaojie=" + jiaojie +
+        ", JiaoJie=" + jiaojie +
         ", jieshou=" + jieshou +
         ", jiaojietime=" + jiaojietime +
         "}";

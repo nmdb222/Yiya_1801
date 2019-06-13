@@ -17,7 +17,11 @@ public class DanjuService {
 
     public void delect(int id){  danjuMapper.delect(id);}
 
-    public boolean queryByID(int id){
-        return  danjuMapper.queryByID(id);
-    }
+    public Danju queryByID(int id){ return danjuMapper.queryByID(id); }
+
+
+    public void up(Danju danju){ danjuMapper.up(danju);}
+
+    public List<Danju> cx(Danju danju){ return danjuMapper.cx(danju);}
+
 }

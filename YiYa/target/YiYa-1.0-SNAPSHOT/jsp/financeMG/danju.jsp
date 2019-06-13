@@ -28,15 +28,40 @@
 <body>
 <script type="text/javascript"  src="jquery-3.3.1.js" ></script>
 
+<script type="text/javascript">
+    function x(i) {
+        var f=document.getElementById("ac");
+        if(i==1){
+            f.action="/danju/cx.do";
+        }if(i==2){
+            f.action="/student/export.do";
+        }
+    }
+</script>
+<body>
+<form id="ac" action="#" method="post">
+    编号<input type="text" size="12" name="编号" value="" />
+    班级<select name="cid">
+    <option value="0">请选择</option>
+    <option value="1">电子票</option>
+    <option value="2">发票</option>
+</select>
+    <button onclick="x(1)" >查询</button>
+    <button onclick="x(2)" >导出</button></br>
+</form>
+<a href="/student/queryAll.do">返回</a>
+<form action="/student/upload.do" method="post"  enctype="multipart/form-data">
+    <input type="file" name="filename"/>
+    <input type="submit" value="上传"  />
+</form>
 
-
-<script type="text/html" id="toolbarDemo">
+<%--<script type="text/html" id="toolbarDemo">
     <div class="layui-btn-container">
         <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
         <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
         <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
     </div>
-</script>
+</script>--%>
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
@@ -45,13 +70,11 @@
 <div class="layui-tab layui-tab-card">
     <ul class="layui-tab-title">
         <li class="layui-this">单据管理</li>
-        <li>商品管理</li>
         <li>订单管理</li>
     </ul>
     <div class="layui-tab-content" style="height: 100px;">
         <div class="layui-tab-item layui-show"><table  class="layui-hide" id="test" lay-filter="test"></table></div>
         <div class="layui-tab-item">2</div>
-        <div class="layui-tab-item">6</div>
     </div>
 </div>
 
@@ -74,8 +97,8 @@
                 ,{field:'test', title:'备注', width:"25%",  sort: true}
                 ,{fixed: 'right',width:"10%", title:'操作', toolbar: '#barDemo', width:150}
             ]]
-          /*  ,limit:5
-            ,limits:[5,10]
+          /*  ,limit:3
+            ,limits:[3,10]
             ,page: true*/
         });
         //监听行工具事件
@@ -96,7 +119,8 @@
                 layer.open({
                     type: 2,
                     area: ['700px', '600px'],
-                    content:'/danju/update.do?id='+data.id,
+                    content:'/danju/queryByID.do?id='+data.id,
+
                     cancel: function(index, layero){
                         if(confirm('确定要关闭么')){ //只有当点击confirm框的确定时，该层才会关闭
                             layer.close(index)
