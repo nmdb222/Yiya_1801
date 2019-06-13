@@ -1,11 +1,14 @@
 package com.hy.yiya.financeMG.controller;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.hy.yiya.financeMG.bean.DanjuType;
 import com.hy.yiya.financeMG.bean.Danju;
+import com.hy.yiya.financeMG.bean.JiaoJie;
 import com.hy.yiya.financeMG.bean.Json;
 import com.hy.yiya.financeMG.service.DanjuService;
 import com.hy.yiya.financeMG.service.DanjuTypeService;
+import com.hy.yiya.financeMG.service.JiaojieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,12 +41,16 @@ public class DanjuController {
 
     @RequestMapping("/queryAll.do")
     @ResponseBody
-    public Json queryAll(Integer page,Integer limit){
-        List<Danju> li=danjuService.queryAll();
+    public Json queryAll(Danju danju,Integer page,Integer limit){
+        DanjuType danjuType=new DanjuType();
+        danju.setTy(danjuType);
+        System.out.println(danju.toString());
+        Page pagee= PageHelper.startPage(page,limit,true);
+        List<Danju> li=danjuService.queryAll(danju);
         Json json=new Json();
         json.setCode(0);
         json.setMsg("");
-        json.setCount(danjuService.queryAll().size());
+        json.setCount(danjuService.queryAll(danju).size());
         json.setData(li);
         return json;
     }
@@ -80,6 +87,13 @@ public class DanjuController {
         System.out.println(danju.toString()+"=============================================");
         danjuService.up(danju);
     }
+
+
+
+
+
+
+
     @RequestMapping("/cx.do")
     public ModelAndView cx(Danju danju){
         listDanju=danjuService.cx(danju);

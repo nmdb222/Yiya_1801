@@ -27,41 +27,31 @@
 </head>
 <body>
 <script type="text/javascript"  src="jquery-3.3.1.js" ></script>
+<form class="layui-form" method="post">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">编号</label>
+            <div class="layui-input-inline">
+                <input type="tel" name="bianhao"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <%--<div class="layui-inline">
+            <label class="layui-form-label">发票种类</label>
+            <div class="layui-input-block">
+                <input type="tel" name="type"  autocomplete="off" class="layui-input">
+            </div>
+        </div>--%>
 
-<script type="text/javascript">
-    function x(i) {
-        var f=document.getElementById("ac");
-        if(i==1){
-            f.action="/danju/cx.do";
-        }if(i==2){
-            f.action="/student/export.do";
-        }
-    }
-</script>
-<body>
-<form id="ac" action="#" method="post">
-    编号<input type="text" size="12" name="编号" value="" />
-    班级<select name="cid">
-    <option value="0">请选择</option>
-    <option value="1">电子票</option>
-    <option value="2">发票</option>
-</select>
-    <button onclick="x(1)" >查询</button>
-    <button onclick="x(2)" >导出</button></br>
-</form>
-<a href="/student/queryAll.do">返回</a>
-<form action="/student/upload.do" method="post"  enctype="multipart/form-data">
-    <input type="file" name="filename"/>
-    <input type="submit" value="上传"  />
-</form>
-
-<%--<script type="text/html" id="toolbarDemo">
-    <div class="layui-btn-container">
-        <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
-        <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
-        <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
+        <div class="layui-inline">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="demo1">查询</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
     </div>
-</script>--%>
+</form>
+<script type="text/html" id="toolbarDemo">
+</script>
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
@@ -72,16 +62,33 @@
         <li class="layui-this">单据管理</li>
         <li>订单管理</li>
     </ul>
-    <div class="layui-tab-content" style="height: 100px;">
-        <div class="layui-tab-item layui-show"><table  class="layui-hide" id="test" lay-filter="test"></table></div>
-        <div class="layui-tab-item">2</div>
+    <div class="layui-tab-content" style="height: 100%;">
+        <div class="layui-tab-item layui-show">
+            <table  class="layui-hide" id="test" lay-filter="test"></table>
+        </div>
+        <div class="layui-tab-item" >
+        </div>
     </div>
 </div>
 
 
 <script>
-    layui.use('table', function(){
+    layui.use(['table','form'], function () {
         var table = layui.table;
+        var layer = layui.layer;
+        var form=layui.form;
+        //渲染表格
+
+        form.on('submit(demo1)',function (data) {
+            table.reload("test",{
+                where:{
+                    bianhao : data.field.bianhao,
+                  //  type : data.field.type
+                }
+            })
+            return false;
+        });
+
         table.render({
             elem:'#test'
             ,url:'/danju/queryAll.do'
@@ -97,9 +104,9 @@
                 ,{field:'test', title:'备注', width:"25%",  sort: true}
                 ,{fixed: 'right',width:"10%", title:'操作', toolbar: '#barDemo', width:150}
             ]]
-          /*  ,limit:3
+            ,limit:3
             ,limits:[3,10]
-            ,page: true*/
+            ,page: true
         });
         //监听行工具事件
       table.on('tool(test)', function(obj){

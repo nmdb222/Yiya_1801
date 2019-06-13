@@ -27,16 +27,30 @@
 </head>
 <body>
 <script type="text/javascript"  src="jquery-3.3.1.js" ></script>
+<form class="layui-form" method="post">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">交接人</label>
+            <div class="layui-input-inline">
+                <input type="tel" name="jiaojie"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label">接受人</label>
+            <div class="layui-input-block">
+                <input type="tel" name="jieshou"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
 
-
-
-<%--<script type="text/html" id="toolbarDemo">
-    <div class="layui-btn-container">
-        <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
-        <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
-        <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
+        <div class="layui-inline">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="demo1">查询</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
     </div>
-</script>--%>
+</form>
+
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
@@ -44,9 +58,8 @@
 
 <div class="layui-tab layui-tab-card">
     <ul class="layui-tab-title">
-        <li class="layui-this">单据管理</li>
-        <li>商品管理</li>
-        <li>订单管理</li>
+        <li class="layui-this">交接管理</li>
+        <li>添加交接</li>
     </ul>
     <div class="layui-tab-content" style="height: 100px;">
         <div class="layui-tab-item layui-show"><table  class="layui-hide" id="test" lay-filter="test"></table></div>
@@ -57,22 +70,37 @@
 
 
 <script>
-    layui.use('table', function(){
+    layui.use(['table','form'], function () {
         var table = layui.table;
+        var layer = layui.layer;
+        var form=layui.form;
+        //渲染表格
+
+        form.on('submit(demo1)',function (data) {
+            table.reload("test",{
+                where:{
+                    jiaojie : data.field.jiaojie,
+                    jieshou : data.field.jieshou
+                }
+            })
+            return false;
+        });
+
         table.render({
             elem:'#test'
-            ,url:'/danju/queryAll.do'
+            ,url:'/jiaojie/queryAll.do'
             ,toolbar:'#toolbarDemo'
-            ,title:'用户数据表'
+            ,title:'交接表'
             ,totalRow: true
             ,cols:[[
                 {type: 'checkbox', fixed: 'left'}
-                ,{field:'id', title:'ID', width:"15%", sort: true, totalRow: true}
-                ,{field:'bianhao', title:'编号', width:"12%",sort: true, totalRow: true}
-                ,{field:'money', title:'金额', width:"13%",  sort: true}
-                ,{field:'ty', title:'单据种类', templet:'<div>{{d.ty.type}}</div>', width:"15%",  sort: true}
-                ,{field:'test', title:'备注', width:"25%",  sort: true}
-                ,{fixed: 'right',width:"10%", title:'操作', toolbar: '#barDemo', width:150}
+                ,{field:'id', title:'ID', width:"10%", sort: true, totalRow: true}
+                ,{field:'money', title:'金额', width:"10%",sort: true, totalRow: true}
+                ,{field:'jiaojie', title:'交接人', width:"10%",  sort: true}
+                ,{field:'jieshou', title:'接受人', width:"10%",  sort: true}
+                ,{field:'jiaojietime', title:'交接时间', width:"20%",  sort: true}
+                ,{field:'test', title:'备注', width:"20%",  sort: true}
+                ,{fixed: 'right',width:"20%", title:'操作', toolbar: '#barDemo', width:150}
             ]]
           /*  ,limit:3
             ,limits:[3,10]
@@ -83,7 +111,7 @@
             var data = obj.data;
             if(obj.event === 'del'){
                 layer.confirm('真的删除行么', function(index){
-                    $.get("/danju/delect.do?id="+data.id,function(data,status){
+                    $.get("/jiaojie/delect.do?id="+data.id,function(data,status){
 
                     })
                     obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
@@ -96,7 +124,7 @@
                 layer.open({
                     type: 2,
                     area: ['700px', '600px'],
-                    content:'/danju/queryByID.do?id='+data.id,
+                    content:'/jiaojie/queryByID.do?id='+data.id,
 
                     cancel: function(index, layero){
                         if(confirm('确定要关闭么')){ //只有当点击confirm框的确定时，该层才会关闭

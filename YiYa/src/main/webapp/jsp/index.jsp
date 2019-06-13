@@ -72,7 +72,7 @@
             <a href="javascript:;">财务管理</a>
             <dl class="layui-nav-child"> <!-- 二级菜单 -->
                 <dd><a onClick="x_admin_show('单据管理','../jsp/financeMG/danju.jsp')"><i class="iconfont">&#xe6a2;</i>单据管理</a></dd>
-                <dd><a onClick="x_admin_show('交接管理','http://www.baidu.com')"><i class="iconfont">&#xe6a8;</i>交接管理</a></dd>
+                <dd><a onClick="x_admin_show('交接管理','../jsp/financeMG/jiaojie.jsp')"><i class="iconfont">&#xe6a8;</i>交接管理</a></dd>
                 <dd><a onClick="x_admin_show('关账管理','http://www.baidu.com')"><i class="iconfont">&#xe6b8;</i>关账管理</a></dd>
                 <dd><a onClick="x_admin_show('优惠卷','http://www.baidu.com')"><i class="iconfont">&#xe6b8;</i>优惠卷</a></dd>
                 <dd><a onClick="x_admin_show('促销方案','http://www.baidu.com')"><i class="iconfont">&#xe6b8;</i>促销方案</a></dd>

@@ -31,4 +31,10 @@
         <!--&lt;!&ndash;<package name="">&ndash;&gt;-->
         <!--<package name="com.hy.dao"></package>-->
     <!--</mappers>-->
+
+        <!-- 配置分页插件 -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+
 </configuration>

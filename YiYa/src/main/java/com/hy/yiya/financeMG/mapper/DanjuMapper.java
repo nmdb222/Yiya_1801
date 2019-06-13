@@ -15,8 +15,8 @@ public interface DanjuMapper extends BaseMapper<Danju> {
     @Results({
             @Result(column ="type",property = "ty", one = @One(select="com.hy.yiya.financeMG.mapper.DanjutypeMapper.queryByID", fetchType = FetchType.EAGER))
     })
-    @Select("select * from danju")
-    public List<Danju> queryAll();
+    @SelectProvider(type = DanjuSql.class,method = "select")
+    public List<Danju> queryAll(Danju danju);
 
     @Delete("delete from danju where id=#{value}")
     public void delect(int id);

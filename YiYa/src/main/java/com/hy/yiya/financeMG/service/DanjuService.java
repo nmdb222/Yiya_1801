@@ -13,7 +13,7 @@ public class DanjuService {
     @Autowired
     public DanjuMapper danjuMapper;
 
-    public List<Danju> queryAll(){ return danjuMapper.queryAll();}
+    public List<Danju> queryAll(Danju danju){ return danjuMapper.queryAll(danju);}
 
     public void delect(int id){  danjuMapper.delect(id);}
 

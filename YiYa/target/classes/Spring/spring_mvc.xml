@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -16,6 +17,7 @@
         http://www.springframework.org/schema/tool
         http://www.springframework.org/schema/tool/spring-tool.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
 
   <!--&lt;!&ndash; 模板解析器2  &ndash;&gt;-->
   <!--<bean id="templateResolver" class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">-->
@@ -89,4 +91,6 @@
       <!--<aop:around method="around" pointcut-ref="logPointCut"/>-->
     <!--</aop:aspect>-->
   <!--</aop:config>-->
+
+
 </beans>
