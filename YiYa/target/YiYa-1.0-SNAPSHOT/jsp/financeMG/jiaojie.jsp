@@ -63,8 +63,79 @@
     </ul>
     <div class="layui-tab-content" style="height: 100px;">
         <div class="layui-tab-item layui-show"><table  class="layui-hide" id="test" lay-filter="test"></table></div>
-        <div class="layui-tab-item">2</div>
-        <div class="layui-tab-item">6</div>
+        <div class="layui-tab-item">
+            <form class="layui-form" action="../jiaojie/insert.do">
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">金额：</label>
+                    <div class="layui-input-block">
+                        <input type="text"  name="money" required  lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">交接人：</label>
+                    <div class="layui-input-block">
+                        <input type="text"  name="jiaojie" required  lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">接手人：</label>
+                    <div class="layui-input-block">
+                        <input type="text"  name="jieshou" required  lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">交接时间：</label>
+                    <div class="layui-input-block">
+                        <input type="date"   name="jiaojietime" required  lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">备注：</label>
+                    <div class="layui-input-block">
+                        <input type="text"  name="test" required  lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button type="submit" id="sub" class="layui-btn" lay-submit lay-filter="formDemo">确定添加</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- 示例-970 -->
+            <ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="3820120620"></ins>
+
+
+            <script>
+                layui.use(['form', 'layedit', 'laydate'], function(){
+                    var form = layui.form
+                        ,layer = layui.layer
+                        ,layedit = layui.layedit
+                        ,laydate = layui.laydate;
+
+                    //日期
+                    laydate.render({
+                        elem: '#date1'
+                        ,type: 'date'
+                    });
+
+                    //创建一个编辑器
+                    var editIndex = layedit.build('LAY_demo_editor');
+                    // form.on('submit(demo1)', function(data){
+                    //     form.submit();
+                    //     return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+                    // });
+                });
+                $("#sub").click(function () {
+                    var index=parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                });
+            </script>
+        </div>
     </div>
 </div>
 

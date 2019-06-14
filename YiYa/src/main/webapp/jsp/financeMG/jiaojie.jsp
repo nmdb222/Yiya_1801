@@ -59,12 +59,9 @@
 <div class="layui-tab layui-tab-card">
     <ul class="layui-tab-title">
         <li class="layui-this">交接管理</li>
-        <li>添加交接</li>
     </ul>
     <div class="layui-tab-content" style="height: 100px;">
         <div class="layui-tab-item layui-show"><table  class="layui-hide" id="test" lay-filter="test"></table></div>
-        <div class="layui-tab-item">2</div>
-        <div class="layui-tab-item">6</div>
     </div>
 </div>
 

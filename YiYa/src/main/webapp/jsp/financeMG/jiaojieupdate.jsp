@@ -53,13 +53,13 @@
     <div class="layui-form-item">
         <label class="layui-form-label">接手人：</label>
         <div class="layui-input-block">
-            <input type="date" value="${jiaojie.jieshou}" name="jieshou" required  lay-verify="required" autocomplete="off" class="layui-input">
+            <input type="text" value="${jiaojie.jieshou}" name="jieshou" required  lay-verify="required" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">交接时间：</label>
         <div class="layui-input-block">
-            <input type="text"  value="${jiaojie.jiaojietime}" name="jiaojietime" required  lay-verify="required" autocomplete="off" class="layui-input">
+            <input type="date"  value="${jiaojie.jiaojietime}" name="jiaojietime" required  lay-verify="required" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
